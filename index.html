@@ -6,9 +6,8 @@
     <title>MJs Personal Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/545496047d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,7 +27,7 @@
         </ul>
         <div class="container  ">
             <div class="width-33 logo"> <span class="span-col">MJs</span>
-                PortFolio&#129293;
+                PortFolio<span class="whiteheart">&#x1f90d;</span>
                 <h6>"Designing Tomorrow's User Interfaces"</h6>
             </div>
             <div class="width-66">
@@ -60,7 +59,7 @@
                     <a href="https://www.linkedin.com/in/manoj-tambake" target="_blank">
                         <i class="fa fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/manoj-mj2001" target="_blank">
+                    <a href="https://github.com/manoj-mj2001" target="_blank" class="git">
                         <i class="fa fa-github"></i>
                     </a>
                 </div>
@@ -73,8 +72,9 @@
 
 
     <!------ABOUT US SECTION------>
-    <div class="main-section bg-lightgrey" id="about">
-        <div class="container">
+    <div class="main-section bg-lightgrey" id="about" style="background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(15,1,4,0.8) 100%);">
+        <div class=" container" style="margin-top: 100px;">
             <div class="width-50">
                 <img src="imgs/abt1.jpg" class="abt-img">
             </div>
@@ -100,7 +100,7 @@
     </div>
 
     <!------SKILL SECTION------>
-    <div class="main-section " style="background-color: rgba(147, 87, 202, 0.632);" id="skills">
+    <div class="main-section" style="background-color: #4b5bca;" id="skills">
         <div class="container">
             <h2 class="heading-text">My Skills</h2>
             <div class="width-50">
@@ -150,44 +150,45 @@
 
 
     <!------PROJECTS SECTION------>
-    <div class="main-section" id="projects">
-        <div class="container ">
-            <h2 class="heading-text">My Projects</h2>
-            <div class="gallery">
-                <div class="width-33">
-                    <img src="images/gallery-1.jpg">
-                </div>
-                <div class="width-33">
-                    <img src="images/gallery-2.jpg">
-                </div>
-                <div class="width-33">
-                    <img src="images/gallery-3.jpg">
-                </div>
-                <div class="width-33">
-                    <img src="images/gallery-4.jpg">
-                </div>
-                <div class="width-33">
-                    <img src="images/gallery-5.jpg">
-                </div>
-                <div class="width-33">
-                    <img src="images/gallery-6.jpg">
-                </div>
+    <div class="main-section" id="projects" style="background-color: #4b5bca; shadow:"";>
+        <div class=" container ">
+            <h2 class=" heading-text">My Projects</h2>
+        <div class="gallery">
+            <div class="width-33">
+                <img src="">
+            </div>
+            <div class="width-33">
+                <img src="">
+            </div>
+            <div class="width-33">
+                <img src="">
+            </div>
+            <div class="width-33">
+                <img src="">
+            </div>
+            <div class="width-33">
+                <img src="">
+            </div>
+            <div class="width-33">
+                <img src="">
             </div>
         </div>
     </div>
+    </div>
 
     <!-------------CONTACT ME SECTION----------------------->
-    <div class="contact main-section" style="background-color: rgba(255, 228, 196, 0.491);" id="contact">
+    <div class="contact main-section" style="background-color:#4b5bca;" id="contact">
 
-        <div class="container ">
+        <div class="container">
             <h2 class="heading-text ">Contact Me</h2>
-            <div class="cont">
-                <input placeholder="Enter your Name :" class="input-style" type="text" required>
-                <input placeholder="Enter your E-mail Address :" class="input-style" type="email" required>
-                <input placeholder="Enter your Mobile No : " class="input-style" type="text" required>
-                <input placeholder="Enter your Home Address : " class="input-style" type="text" required>
+            <form class="cont" id="frmdata">
 
-                <button>
+                <input name="name" placeholder="Enter your Name :" class="input-style" type="text" required>
+                <input name="email" placeholder=" Enter your E-mail Address :" class="input-style" type="email"
+                    required>
+                <textarea name="message" class="input-area" rows="5"
+                    placeholder="  Enter your Message for Me : "></textarea>
+                <button type="submit">
                     <div><span>
                             <p>Submit</p>
                         </span></div>
@@ -197,7 +198,7 @@
                 </button>
 
 
-            </div>
+            </form>
             <div class="container tools">
 
                 <div class="width-33">
@@ -229,7 +230,7 @@
         <div class="footer-sect width-50">CopyRight © 2023 MJs Personal PortFolio Website. All Rights Reserved
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
-<script src="">
-</html >
+
+</html>

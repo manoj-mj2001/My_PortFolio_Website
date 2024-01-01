@@ -12,10 +12,6 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: #f5f5dc;
-  background-image: url("./imgs/back.webp");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .circles {
@@ -179,16 +175,50 @@ body {
 .logo h6 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 15px;
-  margin-left: 6px;
+  margin-left: 2px;
   margin-top: -7px;
   font-style: oblique;
   font-weight: 500;
 }
 
+.logo .whiteheart {
+  -webkit-transition: opacity 7s ease-in-out;
+  -moz-transition: opacity 7s ease-in-out;
+  -o-transition: opacity 7s ease-in-out;
+  transition: opacity 7s ease-in-out;
+  animation-name: heartFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 0.7s;
+  animation-direction: alternate;
+}
+
+@keyframes heartFadeInOut {
+  0% {
+    opacity: 1;
+  }
+
+  14% {
+    opacity: 1;
+  }
+
+  28% {
+    opacity: 0;
+  }
+
+  42% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 0;
+  }
+}
 
 .span-col {
   color: #ffb000;
 }
+
 
 nav {
   float: right;
@@ -216,6 +246,8 @@ nav a:hover {
 .abt-img {
   width: 90%;
   clip-path: circle(175px);
+  margin-top: -30px;
+
 }
 
 .circular--portrait img {
@@ -337,7 +369,7 @@ nav a:hover {
   width: 100%;
   float: left;
   padding: 30px 0px 60px 0px;
-  display: flex;
+  position: relative;
 }
 
 .width-100 {
@@ -352,12 +384,9 @@ nav a:hover {
   float: left;
   font-size: 38px;
   text-align: center;
-  margin-bottom: 50px;
   color: #fcffe7;
-  font-feature-settings: "abvf";
-  font-variant-ligatures: "historical-ligatures";
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 70px;
 }
 
 .about-img {
@@ -396,7 +425,7 @@ nav a:hover {
 /*****SKILL SECTION*****/
 .skill {
   margin-top: 30px;
-  font-size: 17px;
+  font-size: 25px;
 }
 
 .skill span {
@@ -461,7 +490,7 @@ div[role="progressbar"] {
 
 .cont input,
 .cont button {
-  width: 50%;
+  width: 80%;
   height: 50px;
   font-size: 20px;
 }
@@ -486,17 +515,33 @@ div[role="progressbar"] {
   box-shadow: rgb(133, 248, 0) 0px 3px 4px;
 }
 
+textarea,
+.input-area {
+  width: 80%;
+  font-size: 20px;
+  color: black;
+  border-radius: 8px;
+  outline: none;
+  padding: 10px;
+}
+
+.input-area:focus {
+  border-color: #c6daef;
+  box-shadow: rgb(133, 248, 0) 0px 3px 4px;
+
+}
+
 button {
-  border: #fcffe7;
   display: flex;
   flex-direction: column;
   width: 50%;
   height: 50px;
-  border: 1px solid #555;
+  border: 2px solid gainsboro;
   border-radius: 30px;
-  box-shadow: 0 0.625em 1em 0 rgba(30, 143, 255, 0.35);
+  box-shadow: 0 0 5px white;
   overflow: hidden;
   align-items: center;
+
 }
 
 button div {
@@ -535,9 +580,9 @@ button:hover div {
 }
 
 button p {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: bold;
-  color: #ffffff;
+  color: beige;
 }
 
 button:active {
@@ -548,11 +593,14 @@ button:active {
   margin-top: 50px;
 }
 
+/* 
 .contact {
-  background-image: url("./imgs/cnt.jpg");
+  background-image: url("./imgs/cnt1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size: fill;
+} */
+
+
 
 .contact h3 {
   font-size: 26px;
@@ -585,9 +633,10 @@ button:active {
 }
 
 .width-33 h4 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .width-33 h3 i {
-  font-size: 2;
+  font-size: 1;
+  margin-top: -15px;
 }
