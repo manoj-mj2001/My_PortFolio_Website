@@ -14,11 +14,6 @@ function submitFormData(event) {
     var email = event.target.elements['email'].value;
     var message = event.target.elements['message'].value;
 
-    // Log form values to the console
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Message:', message);
-
     var data = new FormData();
     data.append('name', name);
     data.append('email', email);
