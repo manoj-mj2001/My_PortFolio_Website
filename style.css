@@ -651,7 +651,18 @@ button:active {
       transform: translateY(0px);
     }
   }
-
+  @media only screen and (max-width: 400px)
+  {
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+    
+      to {
+        width:70%;
+      }
+    }
+  }
   @media only screen and (max-width: 768px){
 
 
@@ -716,21 +727,16 @@ height:40%;
 .main-section{
   padding-left: 0px;
 }
-
 @keyframes typing {
   from {
     width: 0;
   }
 
   to {
-    width:34%;
+    width:35%;
   }
 }
+}
+  
 
 
-
-
-
-
-
-  }
