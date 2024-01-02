@@ -659,7 +659,7 @@ button:active {
       }
     
       to {
-        width:70%;
+        width:100%;
       }
     }
   }
@@ -669,6 +669,7 @@ button:active {
     .logo {
       margin-left: 20px;
       font-size:20px;
+      margin-top: 30px;
     }
     .logo h6{
       font-size:7px;
@@ -676,18 +677,21 @@ button:active {
     }
 
     nav{
-float:right;
-margin-left:10px;
-position:fixed;
+margin-left:410px;
+margin-top: -30px;
+float:left;
+width: 100%;
     }
 
     nav a {
-       margin-left:5px;
-      text-align: center;
+      margin-left:10px;
+      text-align:end;
       font-size:13px;
 }
 .banner-section{
   padding-top:1px;
+  margin-top:60px;
+  float: none;
  }
 
 .banner-section h1{
@@ -700,9 +704,13 @@ position:fixed;
   font-size:13px;
   margin-top: 5px;
 }
+.imghome{
+  order: 1;
+}
 .imghome img{
 width: 70%;
 height:40%;
+
 }
 
 .main-panel{
