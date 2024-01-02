@@ -517,11 +517,12 @@ div[role="progressbar"] {
 textarea,
 .input-area {
   width: 80%;
-  font-size: 20px;
-  color: black;
+  font-size:20px;
+  color: grey;
   border-radius: 8px;
   outline: none;
-  padding: 10px;
+  padding:20px;
+  border: 1px solid #555;
 }
 
 .input-area:focus {
@@ -537,11 +538,10 @@ button {
   height: 50px;
   border: 2px solid gainsboro;
   border-radius: 30px;
-  box-shadow: 0 0 5px white;
+  box-shadow: 0 0 3px white;
   overflow: hidden;
   align-items: center;
-
-}
+  }
 
 button div {
   transform: translateY(0px);
@@ -561,17 +561,17 @@ button div span {
   padding: 0.75em 1.125em;
   text-align: center;
 }
-
+            
 button div:nth-child(1) {
-  background-color: #ffb000;
+  background:linear-gradient(to right, #0575E6 0%, #021B79  51%, #0575E6  100%);
 }
 
 button div:nth-child(2) {
-  background-color: #21dc62;
+  background:linear-gradient(to right, #42ab2f 0%, #63e07e  51%, #4cc415  100%) ;
 }
 
 button:hover {
-  box-shadow: 0 0.625em 1em 0 rgba(33, 220, 98, 0.35);
+  box-shadow: 0 0 3px white;
 }
 
 button:hover div {
@@ -581,7 +581,9 @@ button:hover div {
 button p {
   font-size: 20px;
   font-weight: bold;
-  color: beige;
+  color:white;
+  padding-bottom:5px;
+
 }
 
 button:active {
@@ -643,7 +645,7 @@ button:active {
   font-size: 50px;
 }
 
-.logo.anime{
+.anime{
   opacity:0;
   transform: translateY(30px);
   animation: moveup 0.5s linear forwards;
@@ -655,29 +657,3 @@ button:active {
     }
   }
 
-  .width-66 nav .anime{
-    opacity:0;
-    transform: translateY(30px);
-    animation: moveup 0.5s linear forwards;
-    }
-    @keyframes moveup{
-      100%{
-        opacity:1 ;
-        transform: translateY(0px);
-      }
-    }
-    
-      .width-50 .anime{
-        opacity:0;
-        transform: translateY(30px);
-        animation: moveup 0.5s linear forwards;
-        }
-        @keyframes moveup{
-          100%{
-            opacity:1 ;
-            transform: translateY(0px);
-          }
-        }
-      
-    
-    

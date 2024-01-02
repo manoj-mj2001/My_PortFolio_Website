@@ -4,7 +4,17 @@ document.addEventListener('DOMContentLoaded', function () {
         submitFormData(event);
     });
 });
+function checkEmail()
+{
+    var email = document.getElementsByName("email").value;
+// Validate email format using a regular expression
 
+    var emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address");
+        return;
+}
+}
 
 function submitFormData(event) {
     event.preventDefault();
