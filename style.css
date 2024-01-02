@@ -589,15 +589,6 @@ button:active {
   margin-top: 50px;
 }
 
-/* 
-.contact {
-  background-image: url("./imgs/cnt1.jpg");
-  background-repeat: no-repeat;
-  background-size: fill;
-} */
-
-
-
 .contact h3 {
   font-size: 26px;
   text-align: center;
@@ -663,9 +654,11 @@ button:active {
       }
     }
   }
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 768px)
+  {
 
-
+    
+    
     .logo {
       margin-left: 20px;
       font-size:20px;
@@ -696,14 +689,30 @@ width: 100%;
 
 .banner-section h1{
   font-size:25px;
+  text-align: center;
+  margin-left: 1px;
  }
  .banner-section h2{
   font-size:21px;
+  text-align: center;
  }
  .banner-section h3{
   font-size:13px;
   margin-top: 5px;
+   margin-left:248px;
 }
+.banner-section a{
+  text-align: center;
+  margin-left:60px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  
+
+  
+}
+
+
 .imghome{
   order: 1;
 }
