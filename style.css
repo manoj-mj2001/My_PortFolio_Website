@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  -outline: 0;
+  outline: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -219,7 +219,11 @@ body {
   color: #ffb000;
 }
 
-
+#menu-icon {
+  font-size: 2rem;
+  cursor:pointer;
+  display: none;
+}
 nav {
   float: right;
   margin-top: 20px;
@@ -261,7 +265,7 @@ nav a:hover {
   border-radius: 10px;
   margin-top: 30px;
   box-sizing: border-box;
-   height: 500px;
+  height: 500px;
   border: 5px solid white;
   box-shadow: whitesmoke 0 0 40px;
   margin-bottom: 30px;
@@ -657,8 +661,91 @@ button:active {
   @media only screen and (max-width: 768px)
   {
 
+    nav {
+      position: absolute;
+      top:-500%;
+      left: -10%;
+      right:80%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+       box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+      transition: 0.2s ease;
+      align-items: center;
+      justify-content: center;
+      font-size: x-large;
+}
+
+  nav.active {
+      top: 100%;
+  }
+
+  nav a {
+      padding: 1.5rem;
+      display: block;
+      background:black;
+  }
+
+
+    body{
+      overflow-x: hidden;
+      margin: 0;
+    }
+    #menu-icon {
+      display: initial;
+      color: var(--text-color);
+  }
+    .abt-img {
+      width: 50%;
+      clip-path: circle(70px);
+      margin-top:0;
+      text-align: center;
+      position: relative;
+       }
+       .about-us {
+        margin-top:-60px;
+
+         }
+    
+       .about-us h3{
+        font-size:small;
+       }
+       .about-us h4{
+        font-size:smaller;
+       }
     
     
+       .about-us p{
+        font-size: medium;
+        line-height:25px;
+       }
+
+       .skill {
+        margin-top:20px;
+        font-size:10px;
+      }
+      
+      .skill div span {
+         font-size:10px;
+      }
+      .skill div {
+        width: 100%;
+        float: left;
+        margin-top:30px;
+        font-size: medium;
+         }
+
+         div[role="progressbar"] {
+          color: #ffbf35;
+           border-radius:50%;
+         place-items: center;
+         height: 100px;
+         width: 100px;
+         display:grid;
+         gap: 10px;
+         }
+        
+
     .logo {
       margin-left: 20px;
       font-size:20px;
@@ -672,8 +759,8 @@ button:active {
     nav{
 margin-left:410px;
 margin-top: -30px;
-float:left;
-width: 100%;
+position:fixed;
+display: flex;
     }
 
     nav a {
@@ -701,16 +788,12 @@ width: 100%;
   margin-top: 5px;
    margin-left:248px;
 }
-.banner-section a{
-  text-align: center;
-  margin-left:60px;
-  height: 40px;
+.banner-section a {
+   height: 40px;
   width: 40px;
   line-height: 40px;
-  
-
-  
-}
+  text-align: center;
+   }
 
 
 .imghome{
@@ -722,9 +805,10 @@ height:40%;
 
 }
 
+
 .main-panel{
-  height: fit-content;
-  padding: 0px 20px;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .container{
@@ -753,7 +837,7 @@ height:40%;
     width:35%;
   }
 }
-}
-  
 
 
+
+  }

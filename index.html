@@ -7,7 +7,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <script src="https://kit.fontawesome.com/545496047d.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./imgs/Fav-modified.png" type="image/x-icon">
 </head>
 
 <body>
@@ -29,9 +31,12 @@
             <div class="width-33 logo"> <span class="span-col">MJs</span>
                 PortFolio<span class="whiteheart">&#x1f90d;</span>
                 <h6>"Designing Tomorrow's User Interfaces"</h6>
+
             </div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+            
             <div class="width-66">
-                <nav>
+                <nav class="navbar">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
@@ -208,13 +213,12 @@
 
         <div class="container anime">
             <h2 class="heading-text ">Contact Me</h2>
-            <form class="cont" id="frmdata">
+            <form class="cont" id="frmdata" action="https://getform.io/f/3d7e67e1-b781-44b3-9f43-d2e4c3b1995c" method="POST"> 
 
                 <input name="name" placeholder="Enter your Name :" class="input-style" type="text" required/>
-                <input name="email" placeholder="Enter your E-mail Address :" class="input-style" type="email"  required/>
-                <textarea name="message" class="input-area" rows="5"
-                    placeholder="Enter your Message : " required></textarea>
-                <button type="submit" onclick="checkEmail()">
+                <input name="email" placeholder="Enter your E-Mail :" class="input-style" type="email"  required/>
+                <textarea name="message" class="input-area" rows="5" placeholder="Enter your Message :" required></textarea>
+                <button type="submit">
                     <div>
                         <span>
                             <p>SUBMIT &#9989;</p>
@@ -223,7 +227,7 @@
                         <span>
                             <p>THANK YOU&#129303;</p>
                         </span>
-                    </div>
+                    </div>  
                 </button>
 
 
